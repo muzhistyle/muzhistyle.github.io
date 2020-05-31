@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script type="text/ecmascript">
+
+/*改变原始宽度（0）*/
+
+function openNav() {
+
+document.getElementById("mySidenav").style.width = "250px";
+
+}
+
+/*恢复原始宽度0*/
+
+function closeNav() {
+
+document.getElementById("mySidenav").style.width = "0";
+
+}
+</script>
+<style>
+body{
+background-image:url(image/bread-grain-kitchen-bakery.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:100% 100%;
+font-family: "Lato", sans-serif;
+}
+
+
+/*侧边栏选择器*/
+mySidenav{
+}
+.sidenav {
+
+height: 100%;
+
+width: 0; /*原始宽度为0*/
+
+position: fixed;
+
+z-index: 1;
+
+top: 0;
+
+right: 0;
+background-color: #111;
+background:rgba(255,255,255,0.5);
+
+overflow-x: hidden;
+
+transition: 0.5s;
+
+padding-top: 60px;
+
+}
+
+/*侧边栏选项选择器*/
+
+.sidenav a {
+
+padding: 8px 8px 8px 32px;
+
+text-decoration: none;
+
+font-size: 25px;
+
+color:#999999;
+
+display: block;
+
+transition: 0.3s;
+
+
+}
+
+/*侧栏标签和关闭按钮光标的效果*/
+
+.sidenav a:hover, .offcanvas a:focus{
+
+color:#FFFFFF;
+
+}
+
+/*侧栏和关闭按钮的位置选择器*/
+
+.sidenav .closebtn {
+
+position: absolute;
+
+top: 0;
+
+right: 25px;
+
+font-size: 36px;
+
+margin-left: 50px;
+
+}
+
+/*当文档高度小于450px时，改变侧栏的padding属性和字体大小*/
+
+@media screen and (max-height: 450px) {
+
+.sidenav {padding-top: 15px;}
+
+.sidenav a {font-size: 18px;}
+}
+div{
+position:relative;
+width:100%;height:100%;
+}
+p{
+position:bsolute;
+font-size:16px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+
+}
+</style>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+<a href="er.html">二，内存</a>
+
+<a href="san.html">三，硬盘</a>
+
+<a href="si.html">四，显卡</a>
+
+<a href="wu.html">五，显示器</a>
+<a href="liu.html">六，键盘</a>
+<a href="qi.html">七，其他</a>
+</div>
+<span style="font-size:30px;color:#FFFFFF; cursor:pointer" onclick="openNav()">&#9776; </span>
+<div id="writer" style="position:relative;width:700px;height:600px;left:50px;background:rgba(255,255,255,0.5);">
+
+<p>
+<h1>买电脑的知识分享</h1>
+今天想分享一些关于买电脑的小知识，希望能给即将要买电脑的你带来一点帮助。<br />
+这里主要分享一些关于电脑性能方面的知识。<br />
+一，CPU<br />
+  首先呢，我们来聊聊中央处理器也就是CPU，因为现在的主流是Intel（英特尔）的Core（酷睿），所以其他的我就不做介绍了。<br />
+在购物网站购买电脑时，我们通常会看到例如“i7-9750H”这样的标识，这个呢就是处理器的参数。“i7”是酷睿四个系列（i3（低端），i5（中端），i7（高端），i9（发烧））中的一个。<br />
+“-”后面的第1位数字代表是第几代的CPU，数字越大，架构越大，性能越好。<br />
+“-”后面的第2位数字代表处理器的等级，数字越大，架构越新，性能越好。<br />
+“-”后面第3为代表核显（可忽略）。<br />
+“-”后面的第4位代表功耗（可忽略）。<br />
+后缀字母常见有H，U，Y，*+K，*+Q，。<br />
+H代表标压版处理器。<br />
+U代表低压版处理器（性能相对较差）。<br />
+Y代表超低压处理器。<br />
+K表示可超频，大多用在高端的台式机或笔记本上。Ex：HK 标压版超频的CPU。<br />
+Q表示四核处理器。Ex: HQ 标压版四核处理器。<br />
+这里还要强调的一点是（就拿市面上最常见的i5和i7来说），“i5和i7性能的比较要基于同代的处理器，有些“i5”的性能要优于“i7”哦”。<br />
+
+</p>
+</div>
+</body>
+</html>
